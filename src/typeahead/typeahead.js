@@ -384,7 +384,7 @@ angular.module('ui.bootstrap.typeahead', ['ui.bootstrap.debounce', 'ui.bootstrap
        * shift + tab is pressed to bring focus to the previous element
        * then clear the results
        */
-      if (scope.activeIdx === -1 && shouldSelect || evt.which === 9 && !!evt.shiftKey) {
+      if (scope.activeIdx === -1 && shouldSelect || evt.which === 9 && !!evt.shiftKey || evt.which === 9 && !shouldSelect) {
         resetMatches();
         scope.$digest();
         return;
