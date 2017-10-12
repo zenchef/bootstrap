@@ -16,6 +16,7 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "grunt build",
+    "build": "grunt build",
     "test": "grunt"
   },
   "repository": {
